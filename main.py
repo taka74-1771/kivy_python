@@ -1,8 +1,12 @@
+
 from kivy.app import App
+from kivy.lang import Builder
+from pip import main
 from kivy.uix.label import Label
 
-class TestApp(App):
-    def build(self):
-        return Label(text = 'Hello World')
+class MainApp(App):
+    pass
 
-TestApp().run()
+if __name__ == '__main__':
+    
+    MainApp().run()
