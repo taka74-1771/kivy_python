@@ -1,52 +1,63 @@
-<<<<<<< .merge_file_a34500
-BoxLayout:
-    orientation: "horizontal"
-
-    Button:
-        text: "Hello World"
-        size_hint_y: 0.5
-=======
 TabbedPanel:
-    default_tab_text: "Status"
+    do_default_tab: False
+    tab_width: 300
+    tab_pos: "top_mid"
 
-    BoxLayout:
-        orientation: "vertical"
+    ##「Monitor Setting」タブ内のUI
+    TabbedPanelItem:
+        text: "Monitor Setting"
+        BoxLayout:
+            orientation: "horizontal"
+            BoxLayout:
+                orientation: "vertical"
+
+                Label:
+                    text: "Time"
+                    size_hint_y: 0.25
+                    text_size: self.size
+                    font_size: 34
+                    halign: "center"
+                    valign: "bottom"
+                
+                Label:
+                    id: time
+                    text: "00:00:00"
+                    size_hint_y: 0.25
+                    text_size: self.size
+                    font_size: 50
+                    halign: "center"
+                    valign: "top"
+
+                Button:
+                    text: "System Infomation"
+                    size_hint_y: 0.5
+
+            BoxLayout:
+                orientation: "vertical"
+
+                Button:
+                    text: "CPU Clock/Temp"
+                    size_hint_y: 0.5
+
+                Button:
+                    text: "RAM Speed"
+                    size_hint_y: 0.5
+
+    ##「Connection Setting」タブ内のUI
+    TabbedPanelItem:
+        text: "Connection Setting"
         
-        Label:
-            text: "Client IP"
-            size_hint_y: 0.25
+        BoxLayout:
+            orientation: "vertical"
+        
+            Label:
+                text: "Client's IP Address"
+                size_hint_y: 0.25
 
-        TextInput:
-            text: "127.0.0.1"
-            size_hint_y: 0.25
+            TextInput:
+                text: "127.0.0.1"
+                size_hint_y: 0.25
             
-        Button:
-            text: "Hello World"
-            size_hint_y: 0.5
->>>>>>> .merge_file_a19336
-
-    BoxLayout:
-        orientation: "vertical"
-
-        Button:
-            text: "Good Morning"
-            size_hint_y: 0.5
-
-        Button:
-            text: "Good Evening"
-            size_hint_y: 0.5
-
-    BoxLayout:
-        orientation: "vertical"
-
-        Button:
-            text: "Good Morning"
-            size_hint_y: 0.5
-
-        Button:
-<<<<<<< .merge_file_a34500
-            text: "2-2"
-=======
-            text: "Good Evening"
->>>>>>> .merge_file_a19336
-            size_hint_y: 0.5
+            Button:
+                text: "Set Client IP Addr"
+                size_hint_y: 0.5
