@@ -1,29 +1,39 @@
-BoxLayout:
+TabbedPanel:
+    default_tab_text: "Status"
 
-    orientation: "horizontal"
+    BoxLayout:
+        orientation: "vertical"
+        
+        Label:
+            text: "Client IP"
+            size_hint_y: 0.25
 
-    Button:
-        text: "Hello World"
-        size_hint_y: 0.5
+        TextInput:
+            text: "127.0.0.1"
+            size_hint_y: 0.25
+            
+        Button:
+            text: "Hello World"
+            size_hint_y: 0.5
 
     BoxLayout:
         orientation: "vertical"
 
-        Label:
+        Button:
             text: "Good Morning"
             size_hint_y: 0.5
 
-        Label:
+        Button:
             text: "Good Evening"
             size_hint_y: 0.5
 
     BoxLayout:
         orientation: "vertical"
 
-        Label:
+        Button:
             text: "Good Morning"
             size_hint_y: 0.5
 
-        Label:
+        Button:
             text: "Good Evening"
             size_hint_y: 0.5
