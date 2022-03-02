@@ -29,6 +29,7 @@ TabbedPanel:
                     valign: "top"
 
                 Button:
+                    id: "sysinfo"
                     text: "System Infomation"
                     size_hint_y: 0.5
 
@@ -36,11 +37,13 @@ TabbedPanel:
                 orientation: "vertical"
 
                 Button:
-                    text: "CPU Clock/Temp"
+                    id: "cpu"
+                    text: "CPU Clock/Temp/Usage"
                     size_hint_y: 0.5
 
                 Button:
-                    text: "RAM Speed"
+                    id: "ram"
+                    text: "RAM Speed/Usage"
                     size_hint_y: 0.5
 
     ##「Connection Setting」タブ内のUI
